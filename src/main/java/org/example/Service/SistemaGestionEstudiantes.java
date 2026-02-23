@@ -5,14 +5,14 @@ import org.example.Model.Estudiante;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SistemaGestionEstudiantes {
+public class SistemaGestionEstudiantes implements IGestionEstudiantes {
 
     List<Estudiante> estudiantes= new ArrayList<>();//se crea la lista
 
     public void registrarEstudiantes(Estudiante estudiante){
         estudiantes.add(estudiante);
     }
-    public List<Estudiante> listarEstudiates(){
+    public List<Estudiante> listarEstudiantes(){
         return estudiantes;
     }
     public Estudiante buscarEstudiante(int id){//filtro para buscar estudiante por el id
